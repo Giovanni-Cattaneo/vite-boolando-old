@@ -5,40 +5,46 @@ export default {
         return {
 
             activeImage: true,
-            people: [
+            products: [
                 {
-                    fullname: 'Giovanni Cattaneo',
-                    age: 25,
+                    brand: 'Levis',
+                    model: 'RELAXED FEET TEE UNISEX',
+                    price: 14.99,
                     image: '../public/1.webp',
                     altImage: '../public/1b.webp',
                 },
                 {
-                    fullname: 'Marco masini',
-                    age: 45,
+                    brand: 'Levis',
+                    model: 'RELAXED FEET TEE UNISEX',
+                    price: 14.99,
                     image: '../public/2.webp',
                     altImage: '../public/2b.webp',
                 },
                 {
-                    fullname: 'Laura adamoli',
-                    age: 15,
+                    brand: 'Levis',
+                    model: 'RELAXED FEET TEE UNISEX',
+                    price: 14.99,
                     image: '../public/3.webp',
                     altImage: '../public/3b.webp',
                 },
                 {
-                    fullname: 'Paolo brosio',
-                    age: 65,
+                    brand: 'Levis',
+                    model: 'RELAXED FEET TEE UNISEX',
+                    price: 14.99,
                     image: '../public/4.webp',
                     altImage: '../public/4b.webp',
                 },
                 {
-                    fullname: 'Luca bizzarri',
-                    age: 35,
+                    brand: 'Levis',
+                    model: 'RELAXED FEET TEE UNISEX',
+                    price: 14.99,
                     image: '../public/5.webp',
                     altImage: '../public/5b.webp',
                 },
                 {
-                    fullname: 'Domenico Vincenzi',
-                    age: 55,
+                    brand: 'Levis',
+                    model: 'RELAXED FEET TEE UNISEX',
+                    price: 14.99,
                     image: '../public/6.webp',
                     altImage: '../public/6b.webp',
                 },
@@ -62,17 +68,21 @@ export default {
 
 <template>
 
-    <div class="card col-12 col-lg-3 col-sm-4 m-3 p-0" v-for="person in people">
-        <img :src="person.image" class="card-img-top" alt="..." v-if="this.activeImage">
-        <img :src="person.altImage" class="card-img-top" alt="..." v-else>
+    <div class="card col-12 col-lg-3 col-sm-4 m-3 p-0" v-for="product in products" @click="turnImage()">
+        <img :src="product.image" class="card-img-top" alt="..." v-if="this.activeImage">
+        <img :src="product.altImage" class="card-img-top" alt="..." v-else>
         <div class="card-body">
-            <h5 class="card-title">{{ person.fullname }}</h5>
-            <p class="card-text">{{ person.age }}</p>
-            <a href="#" class="btn btn-primary" @click="turnImage()">Turn</a>
+            <p class="card-title">{{ product.brand }}</p>
+            <p class="card-text"><strong>{{ product.model }}</strong></p>
+            <span>{{ product.price }}</span>
         </div>
     </div>
 
 
 </template>
 
-<style scoped></style>
+<style scoped>
+.card:hover {
+    cursor: pointer;
+}
+</style>
