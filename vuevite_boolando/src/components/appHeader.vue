@@ -15,7 +15,7 @@ export default {
                 <a href=""> Bambini</a>
             </div>
             <div class="logo">
-                <!-- <img src="/vuevite_boolando/public/img/boolean-logo.png" alt="" width="25%"> -->
+                <img src="../assets/boolean-logo.png" alt="" width="25%">
             </div>
             <div>
                 <a href=""><i class="fa-solid fa-user-plus"></i></a>

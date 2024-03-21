@@ -7,27 +7,32 @@ export default {
                 {
                     fullname: 'Giovanni Cattaneo',
                     age: 25,
-                    image: ''
+                    image: '../public/1.webp'
                 },
                 {
                     fullname: 'Marco masini',
                     age: 45,
-                    image: ''
+                    image: '../public/2.webp'
                 },
                 {
                     fullname: 'Laura adamoli',
                     age: 15,
-                    image: ''
+                    image: '../public/3.webp'
                 },
                 {
                     fullname: 'Paolo brosio',
                     age: 65,
-                    image: ''
+                    image: '../public/4.webp'
                 },
                 {
                     fullname: 'Luca bizzarri',
                     age: 35,
-                    image: ''
+                    image: '../public/5.webp'
+                },
+                {
+                    fullname: 'Domenico Vincenzi',
+                    age: 55,
+                    image: '../public/6.webp'
                 },
             ]
         }
@@ -51,4 +56,9 @@ export default {
 
 </template>
 
-<style></style>
+<style scoped>
+img {
+    width: 100%;
+    object-fit: contain;
+}
+</style>
