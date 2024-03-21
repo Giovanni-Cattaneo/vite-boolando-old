@@ -28,5 +28,9 @@ export default {
 main {
     display: flex;
     flex-wrap: wrap;
+
+    .row {
+        justify-content: center;
+    }
 }
 </style>
