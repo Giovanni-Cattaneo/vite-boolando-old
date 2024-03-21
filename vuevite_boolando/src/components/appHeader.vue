@@ -31,5 +31,14 @@ export default {
 <style>
 header {
     background-color: #ff6900;
+
+    & a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .container {
+        justify-content: space-between;
+    }
 }
 </style>

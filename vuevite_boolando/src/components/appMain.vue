@@ -18,18 +18,6 @@ export default {
             <div class="col-4">
                 <appCard />
             </div>
-            <div class="col-4">
-                <appCard />
-            </div>
-            <div class="col-4">
-                <appCard />
-            </div>
-            <div class="col-4">
-                <appCard />
-            </div>
-            <div class="col-4">
-                <appCard />
-            </div>
         </div>
     </div>
 
