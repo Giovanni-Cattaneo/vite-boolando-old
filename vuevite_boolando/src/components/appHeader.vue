@@ -1,6 +1,35 @@
 <script>
 export default {
-    name: 'appHeader'
+    name: 'appHeader',
+
+    data() {
+        return {
+            genderAge: [
+                {
+                    name: 'Donna',
+                },
+                {
+                    name: 'Uomo',
+                },
+                {
+                    name: 'Bambino',
+                },
+
+            ],
+
+            icons: [
+                {
+                    symbol: '<i class="fa-solid fa-user-plus"></i>',
+                },
+                {
+                    symbol: '<i class="fa-regular fa-heart"></i>',
+                },
+                {
+                    symbol: '<i class="fa-solid fa-cart-shopping"></i>',
+                },
+            ]
+        }
+    }
 }
 
 </script>
@@ -10,9 +39,7 @@ export default {
     <header>
         <div class="container d-flex">
             <div class="gender-categories">
-                <a href="">Donna </a>
-                <a href=""> Uomo </a>
-                <a href=""> Bambini</a>
+                <a v-for="gender in genderAge" href="">{{ gender.name }}</a>
             </div>
             <div class="logo">
                 <img src="../assets/boolean-logo.png" alt="" width="25%">
@@ -37,6 +64,7 @@ header {
     & a {
         color: black;
         text-decoration: none;
+        margin: 3px;
     }
 
     .container {
