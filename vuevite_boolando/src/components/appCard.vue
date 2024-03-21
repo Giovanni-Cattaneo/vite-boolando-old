@@ -7,7 +7,7 @@ export default {
 
 <template>
 
-    <div class="card col-4 m-3" style="width: 18rem;">
+    <div class="card col-3 m-3" style="width: 18rem;">
         <img src="" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>

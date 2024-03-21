@@ -13,15 +13,27 @@ export default {
 
 <template>
 
-    <appCard />
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-4">
+                <appCard />
+            </div>
+            <div class="col-4">
+                <appCard />
+            </div>
+            <div class="col-4">
+                <appCard />
+            </div>
+            <div class="col-4">
+                <appCard />
+            </div>
+            <div class="col-4">
+                <appCard />
+            </div>
+        </div>
+    </div>
 
-    <appCard />
 
-    <appCard />
-
-    <appCard />
-
-    <appCard />
 
 
 </template>
