@@ -31,6 +31,7 @@ export default {
 <style>
 header {
     background-color: #ff6900;
+    text-align: center;
 
     & a {
         color: black;
@@ -39,6 +40,8 @@ header {
 
     .container {
         justify-content: space-between;
+        align-items: center;
+        padding: 0.4rem;
     }
 }
 </style>
