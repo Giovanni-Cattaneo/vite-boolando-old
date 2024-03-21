@@ -1,6 +1,23 @@
 <script>
 export default {
-    name: 'appFooter'
+    name: 'appFooter',
+
+    data() {
+        return {
+            infos: [
+                {
+                    name: 'Informazioni legali',
+                },
+                {
+                    name: 'Diritto di recesso',
+                },
+                {
+                    name: 'Informativa sulla privacy',
+                },
+
+            ]
+        }
+    }
 }
 
 </script>
@@ -12,10 +29,9 @@ export default {
         <div class="container d-flex">
             <div>
                 <h3><strong>Boolando Srl</strong></h3>
-                <div>
-                    <a href="">Infomrazioni legali </a>
-                    <a href="">Informativa sulla privacy </a>
-                    <a href="">Diritto di Recesso</a>
+                <div v-for="info in infos">
+                    <a href="">{{ info.name }}</a>
+
                 </div>
             </div>
             <div>
