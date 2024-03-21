@@ -62,23 +62,15 @@ export default {
 
 <template>
 
-    <div class="card col-3 m-3 p-0" v-for="person in people" v-if="this.activeImage">
-        <img :src="person.image" class="card-img-top" alt="...">
+    <div class="card col-12 col-lg-3 col-sm-4 m-3 p-0" v-for="person in people">
+        <img :src="person.image" class="card-img-top" alt="..." v-if="this.activeImage">
+        <img :src="person.altImage" class="card-img-top" alt="..." v-else>
         <div class="card-body">
             <h5 class="card-title">{{ person.fullname }}</h5>
             <p class="card-text">{{ person.age }}</p>
             <a href="#" class="btn btn-primary" @click="turnImage()">Turn</a>
         </div>
     </div>
-    <div class="card col-3 m-3 p-0" v-for="person in people" v-else>
-        <img :src="person.altImage" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">{{ person.fullname }}</h5>
-            <p class="card-text">{{ person.age }}</p>
-            <a href="#" class="btn btn-primary" @click="turnImage()">Turn</a>
-        </div>
-    </div>
-
 
 
 </template>
