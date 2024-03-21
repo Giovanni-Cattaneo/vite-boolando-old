@@ -28,4 +28,8 @@ export default {
 
 </template>
 
-<style></style>
+<style>
+header {
+    background-color: #ff6900;
+}
+</style>
