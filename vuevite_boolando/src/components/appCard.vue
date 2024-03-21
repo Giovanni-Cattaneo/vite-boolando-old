@@ -5,6 +5,7 @@ export default {
         return {
 
             activeImage: true,
+            activeCard: null,
             products: [
                 {
                     brand: 'Levis',
@@ -12,6 +13,7 @@ export default {
                     price: 14.99,
                     image: '../public/1.webp',
                     altImage: '../public/1b.webp',
+                    originalImage: '../public/1.webp',
                 },
                 {
                     brand: 'Levis',
@@ -19,6 +21,7 @@ export default {
                     price: 14.99,
                     image: '../public/2.webp',
                     altImage: '../public/2b.webp',
+                    originalImage: '../public/2.webp',
                 },
                 {
                     brand: 'Levis',
@@ -26,6 +29,7 @@ export default {
                     price: 14.99,
                     image: '../public/3.webp',
                     altImage: '../public/3b.webp',
+                    originalImage: '../public/3.webp',
                 },
                 {
                     brand: 'Levis',
@@ -33,6 +37,7 @@ export default {
                     price: 14.99,
                     image: '../public/4.webp',
                     altImage: '../public/4b.webp',
+                    originalImage: '../public/4.webp',
                 },
                 {
                     brand: 'Levis',
@@ -40,6 +45,7 @@ export default {
                     price: 14.99,
                     image: '../public/5.webp',
                     altImage: '../public/5b.webp',
+                    originalImage: '../public/5.webp',
                 },
                 {
                     brand: 'Levis',
@@ -47,30 +53,38 @@ export default {
                     price: 14.99,
                     image: '../public/6.webp',
                     altImage: '../public/6b.webp',
+                    originalImage: '../public/6.webp',
                 },
             ]
         }
     },
     methods: {
 
-        turnImage() {
-            if (this.activeImage) {
-                this.activeImage = false
-            } else {
-                this.activeImage = true
-            }
+        turnImage(index) {
+            if (index >= 0 && index < this.products.length) {
+                this.activeCard = index;
+                console.log(index);
 
+                const product = this.products[this.activeCard]; // variabile per semplificarci la vita
+                if (product.image === product.originalImage) {
+                    product.image = product.altImage; // se ci troviamo su image passiamo ad altimage
+                } else {
+                    product.image = product.originalImage; // se ci troviamo in altimage torniamo alla immagine originale
+                }
+            }
         }
     }
+
+
 }
+
 
 </script>
 
 <template>
 
-    <div class="card col-12 col-lg-3 col-sm-4 m-3 p-0" v-for="product in products" @click="turnImage()">
-        <img :src="product.image" class="card-img-top" alt="..." v-if="this.activeImage">
-        <img :src="product.altImage" class="card-img-top" alt="..." v-else>
+    <div class="card col-12 col-lg-3 col-sm-4 m-3 p-0" v-for="(product, index) in products" :key="index">
+        <img :src="product.image" class="card-img-top" alt="..." @click="turnImage(index)">
         <div class="card-body">
             <p class="card-title">{{ product.brand }}</p>
             <p class="card-text"><strong>{{ product.model }}</strong></p>
@@ -82,7 +96,7 @@ export default {
 </template>
 
 <style scoped>
-.card:hover {
+.card img:hover {
     cursor: pointer;
 }
 </style>
