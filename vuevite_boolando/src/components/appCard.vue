@@ -38,7 +38,7 @@ export default {
 
 <template>
 
-    <div class="card col-3 m-3" style="width: 18rem;" v-for="person in people">
+    <div class="card col-4 m-3" style="width: 18rem;" v-for="person in people">
         <img :src="person.image" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">{{ person.fullname }}</h5>
@@ -46,6 +46,7 @@ export default {
             <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
     </div>
+
 
 
 </template>
