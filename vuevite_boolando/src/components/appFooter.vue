@@ -46,8 +46,5 @@ footer {
     .container {
         justify-content: space-between;
     }
-
-
-
 }
 </style>
