@@ -86,6 +86,9 @@ export default {
     <div class="card col-12 col-lg-3 col-sm-4 m-3 p-0" v-for="(product, index) in products" :key="index">
         <img :src="product.image" class="card-img-top" alt="..." @click="turnImage(index)">
         <div class="card-body">
+            <div class="heart">&hearts;</div>
+            <div class="discount">-50%</div>
+            <div class="sustainability">Sostenibilità</div>
             <p class="card-title">{{ product.brand }}</p>
             <p class="card-text"><strong>{{ product.model }}</strong></p>
             <span>{{ product.price }}</span>
@@ -96,7 +99,45 @@ export default {
 </template>
 
 <style scoped>
-.card img:hover {
-    cursor: pointer;
+.card {
+    position: relative;
+
+    img:hover {
+        cursor: pointer;
+    }
+
+    .heart:hover {
+        color: red;
+    }
+
+    .discount {
+        position: absolute;
+        background-color: red;
+        padding: 3px 5px;
+        color: white;
+        bottom: 24%;
+        left: 0;
+    }
+
+    .sustainability {
+        position: absolute;
+        background-color: green;
+        color: white;
+        padding: 3px 5px;
+        bottom: 24%;
+        left: 15%;
+    }
+
+    .heart {
+        position: absolute;
+        background-color: lightgray;
+        padding: 0.7rem;
+        top: 2%;
+        right: 0;
+        font-size: 1.7rem;
+    }
+
+
+
 }
 </style>

@@ -29,8 +29,8 @@ export default {
         <div class="container d-flex">
             <div>
                 <h3><strong>Boolando Srl</strong></h3>
-                <div v-for="info in infos">
-                    <a href="">{{ info.name }}</a>
+                <div>
+                    <a v-for="info in infos" href="">{{ info.name }}</a>
 
                 </div>
             </div>

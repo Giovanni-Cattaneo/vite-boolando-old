@@ -24,9 +24,9 @@ export default {
 
   </main>
 
-  <footer>
-    <appFooter />
-  </footer>
+
+  <appFooter />
+
 
 </template>
 
