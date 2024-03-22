@@ -1,6 +1,7 @@
 <script>
 export default {
     name: 'appCard',
+    props: ['brand', 'image', 'price', 'altPrice', 'model', 'altImage', 'originalimage'],
     data() {
         return {
 
