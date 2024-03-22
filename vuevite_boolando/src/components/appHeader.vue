@@ -74,5 +74,5 @@ header {
     }
 }
 
-/* @use '../assets/scss/partials/_header.scss'; */
+/* @use '../assets/scss/partials/header.scss'; */
 </style>
