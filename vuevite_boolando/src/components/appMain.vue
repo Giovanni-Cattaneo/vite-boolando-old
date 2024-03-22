@@ -49,6 +49,7 @@ export default {
                 {
                     brand: 'Levis',
                     model: 'RELAXED FEET TEE UNISEX',
+                    price: 14.99,
                     altPrice: parseInt((this.price / 2).toFixed(2)),
                     image: '../public/5.webp',
                     altImage: '../public/5b.webp',
@@ -57,6 +58,7 @@ export default {
                 {
                     brand: 'Levis',
                     model: 'RELAXED FEET TEE UNISEX',
+                    price: 14.99,
                     altPrice: parseInt((this.price / 2).toFixed(2)),
                     image: '../public/6.webp',
                     altImage: '../public/6b.webp',
