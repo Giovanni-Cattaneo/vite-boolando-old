@@ -24,7 +24,7 @@ export default {
 
 </template>
 
-<style>
+<style lang="scss">
 main {
     display: flex;
     flex-wrap: wrap;
@@ -34,5 +34,5 @@ main {
     }
 }
 
-/* @use '../assets/scss/partials/_header.scss'; */
+/*@use '../assets/scss/partials/_header.scss';*/
 </style>

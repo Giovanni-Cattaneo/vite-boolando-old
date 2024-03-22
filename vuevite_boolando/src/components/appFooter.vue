@@ -47,7 +47,7 @@ export default {
 
 </template>
 
-<style>
+<style lang="scss">
 footer {
     background-color: #1a1a1a;
     color: white;

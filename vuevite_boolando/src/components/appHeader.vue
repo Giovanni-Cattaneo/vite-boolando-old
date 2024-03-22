@@ -55,7 +55,7 @@ export default {
 
 </template>
 
-<style>
+<style lang="scss">
 header {
     background-color: #ff6900;
     text-align: center;

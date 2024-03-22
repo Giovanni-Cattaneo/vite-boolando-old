@@ -103,7 +103,7 @@ export default {
 
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .card {
     position: relative;
 
