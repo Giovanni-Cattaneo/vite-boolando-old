@@ -67,8 +67,10 @@ export default {
             ]
         }
     },
-    methos: {
-
+    methods: {
+        updateImage(newImage, index) {
+            this.products[index].image = newImage;
+        }
     }
 }
 
@@ -79,7 +81,8 @@ export default {
         <div class="row">
             <div class="card col-12 col-lg-3 col-sm-4 m-3 p-0" v-for="(product, index) in products" :key="index">
                 <appCard :brand="product.brand" :image="product.image" :price="product.price" :model="product.model"
-                    :altImage="product.altImage" :originalImage="product.originalImage" :altPrice="product.altPrice" />
+                    :altImage="product.altImage" :originalImage="product.originalImage" :altPrice="product.altPrice"
+                    :index="index" @change-image="updateImage(newImage, index)" />
             </div>
         </div>
     </div>
