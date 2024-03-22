@@ -11,6 +11,7 @@ export default {
                     brand: 'Levis',
                     model: 'RELAXED FEET TEE UNISEX',
                     price: 14.99,
+                    altPrice: Number((this.price / 2).toFixed(2)),
                     image: '../public/1.webp',
                     altImage: '../public/1b.webp',
                     originalImage: '../public/1.webp',
@@ -19,6 +20,7 @@ export default {
                     brand: 'Levis',
                     model: 'RELAXED FEET TEE UNISEX',
                     price: 14.99,
+                    altPrice: parseInt((this.price / 2).toFixed(2)),
                     image: '../public/2.webp',
                     altImage: '../public/2b.webp',
                     originalImage: '../public/2.webp',
@@ -27,6 +29,7 @@ export default {
                     brand: 'Levis',
                     model: 'RELAXED FEET TEE UNISEX',
                     price: 14.99,
+                    altPrice: parseInt((this.price / 2).toFixed(2)),
                     image: '../public/3.webp',
                     altImage: '../public/3b.webp',
                     originalImage: '../public/3.webp',
@@ -35,6 +38,7 @@ export default {
                     brand: 'Levis',
                     model: 'RELAXED FEET TEE UNISEX',
                     price: 14.99,
+                    altPrice: parseInt((this.price / 2).toFixed(2)),
                     image: '../public/4.webp',
                     altImage: '../public/4b.webp',
                     originalImage: '../public/4.webp',
@@ -42,7 +46,7 @@ export default {
                 {
                     brand: 'Levis',
                     model: 'RELAXED FEET TEE UNISEX',
-                    price: 14.99,
+                    altPrice: parseInt((this.price / 2).toFixed(2)),
                     image: '../public/5.webp',
                     altImage: '../public/5b.webp',
                     originalImage: '../public/5.webp',
@@ -50,7 +54,7 @@ export default {
                 {
                     brand: 'Levis',
                     model: 'RELAXED FEET TEE UNISEX',
-                    price: 14.99,
+                    altPrice: parseInt((this.price / 2).toFixed(2)),
                     image: '../public/6.webp',
                     altImage: '../public/6b.webp',
                     originalImage: '../public/6.webp',
@@ -92,6 +96,7 @@ export default {
             <p class="card-title">{{ product.brand }}</p>
             <p class="card-text"><strong>{{ product.model }}</strong></p>
             <span>{{ product.price }}</span>
+            <span>{{ product.altPrice }}</span>
         </div>
     </div>
 
