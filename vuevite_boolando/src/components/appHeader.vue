@@ -62,7 +62,7 @@ header {
     box-shadow: 0 0 10px;
 
     & a {
-        color: black;
+        color: white;
         text-decoration: none;
         margin: 3px;
     }
