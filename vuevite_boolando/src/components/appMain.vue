@@ -69,7 +69,12 @@ export default {
     },
     methods: {
         updateImage(newImage, index) {
-            this.products[index].image = newImage;
+            if (this.products[index].image === this.products[index].originalImage) {
+                this.products[index].image = this.products[index].altImage;
+            } else {
+                this.products[index].image = this.products[index].originalImage
+            }
+
         }
     }
 }
