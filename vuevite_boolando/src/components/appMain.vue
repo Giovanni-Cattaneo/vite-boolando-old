@@ -78,7 +78,8 @@ export default {
     <div class="container text-center">
         <div class="row">
             <div class="card col-12 col-lg-3 col-sm-4 m-3 p-0" v-for="(product, index) in products" :key="index"
-                :brand="product.brand" :image="product.image" :price="product.price" :model="product.model">
+                :brand="product.brand" :image="product.image" :altimahe="product.altImage" :price="product.price"
+                :model="product.model" :originalImage="product.originalImage">
                 <appCard />
             </div>
         </div>

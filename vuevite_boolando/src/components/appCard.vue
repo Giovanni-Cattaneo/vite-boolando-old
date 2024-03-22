@@ -1,7 +1,7 @@
 <script>
 export default {
     name: 'appCard',
-    props: ['brand', 'image', 'price', 'altPrice', 'model'],
+    props: ['brand', 'image', 'price', 'altPrice', 'model', 'altImage', 'originalimage'],
     methods: {
 
 
@@ -11,10 +11,10 @@ export default {
                 console.log(index);
 
                 const product = this.products[this.activeCard]; // variabile per semplificarci la vita
-                if (product.image === product.originalImage) {
-                    product.image = product.altImage; // se ci troviamo su image passiamo ad altimage
+                if (image === originalImage) {
+                    image = altImage; // se ci troviamo su image passiamo ad altimage
                 } else {
-                    product.image = product.originalImage; // se ci troviamo in altimage torniamo alla immagine originale
+                    image = originalImage; // se ci troviamo in altimage torniamo alla immagine originale
                 }
             }
         }
