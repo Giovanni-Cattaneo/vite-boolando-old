@@ -11,15 +11,15 @@ export default {
     methods: {
 
         turnImage(index) {
-            if (index >= 0 && index < this.products.length) {
+            if (index >= 0 && index < 6) {
                 this.activeCard = index;
                 console.log(index);
 
-                const product = this.products[this.activeCard]; // variabile per semplificarci la vita
-                if (product.image === product.originalImage) {
-                    product.image = product.altImage; // se ci troviamo su image passiamo ad altimage
+                //const product = this.products[this.activeCard]; // variabile per semplificarci la vita, nel caso serva ma per ora no
+                if (image === originalImage) {
+                    image = altImage; // se ci troviamo su image passiamo ad altimage
                 } else {
-                    product.image = product.originalImage; // se ci troviamo in altimage torniamo alla immagine originale
+                    image = originalImage; // se ci troviamo in altimage torniamo alla immagine originale
                 }
             }
         }
@@ -32,7 +32,7 @@ export default {
 
 <template>
     <div>
-        <img :src="image" class="card-img-top" alt="..." @click="turnImage(index)">
+        <img :src="image" class="card-img-top" alt="...">
         <div class="card-body">
             <div class="heart">&hearts;</div>
             <div class="discount">-50%</div>
