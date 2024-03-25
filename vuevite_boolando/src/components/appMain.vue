@@ -11,6 +11,7 @@ export default {
         return {
             products: [
                 {
+                    id: 1,
                     brand: 'Levis',
                     model: 'RELAXED FEET TEE UNISEX',
                     price: 14.99,
@@ -20,6 +21,7 @@ export default {
                     originalImage: '../public/1.webp',
                 },
                 {
+                    id: 2,
                     brand: 'Levis',
                     model: 'RELAXED FEET TEE UNISEX',
                     price: 14.99,
@@ -29,6 +31,7 @@ export default {
                     originalImage: '../public/2.webp',
                 },
                 {
+                    id: 3,
                     brand: 'Levis',
                     model: 'RELAXED FEET TEE UNISEX',
                     price: 14.99,
@@ -38,6 +41,7 @@ export default {
                     originalImage: '../public/3.webp',
                 },
                 {
+                    id: 4,
                     brand: 'Levis',
                     model: 'RELAXED FEET TEE UNISEX',
                     price: 14.99,
@@ -47,6 +51,7 @@ export default {
                     originalImage: '../public/4.webp',
                 },
                 {
+                    id: 5,
                     brand: 'Levis',
                     model: 'RELAXED FEET TEE UNISEX',
                     price: 14.99,
@@ -56,6 +61,7 @@ export default {
                     originalImage: '../public/5.webp',
                 },
                 {
+                    id: 6,
                     brand: 'Levis',
                     model: 'RELAXED FEET TEE UNISEX',
                     price: 14.99,
