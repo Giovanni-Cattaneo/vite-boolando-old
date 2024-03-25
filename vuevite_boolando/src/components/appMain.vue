@@ -88,6 +88,10 @@ export default {
     },
     mounted() {
         console.log(state.message);
+        axios.get('http://localhost:3000/products').then(response => {
+            console.log(response)
+            this.products = response.data
+        })
     }
 }
 
