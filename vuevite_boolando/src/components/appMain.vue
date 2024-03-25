@@ -68,7 +68,7 @@ export default {
         }
     },
     methods: {
-        updateImage(newImage, index) {
+        updateImage(index) {
             if (this.products[index].image === this.products[index].originalImage) {
                 this.products[index].image = this.products[index].altImage;
             } else {
@@ -87,7 +87,7 @@ export default {
             <div class="card col-12 col-lg-3 col-sm-4 m-3 p-0" v-for="(product, index) in products" :key="index">
                 <appCard :brand="product.brand" :image="product.image" :price="product.price" :model="product.model"
                     :altImage="product.altImage" :originalImage="product.originalImage" :altPrice="product.altPrice"
-                    :index="index" @change-image="updateImage(newImage, index)" />
+                    :index="index" @click="updateImage(index)" />
             </div>
         </div>
     </div>

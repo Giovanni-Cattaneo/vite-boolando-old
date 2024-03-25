@@ -9,13 +9,6 @@ export default {
         }
     },
     methods: {
-        turnImage(index) {
-            if (this.image === this.originalImage) {
-                this.$emit('change-image', this.altImage);
-            } else {
-                this.$emit('change-image', this.originalImage);
-            }
-        }
     }
 }
 
@@ -24,7 +17,7 @@ export default {
 
 <template>
     <div>
-        <img :src="image" class="card-img-top" alt="..." @click="turnImage(index)">
+        <img :src="image" class="card-img-top" alt="...">
         <div class="card-body">
             <div class="heart">&hearts;</div>
             <div class="discount">-50%</div>
