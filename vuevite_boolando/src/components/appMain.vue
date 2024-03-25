@@ -2,7 +2,7 @@
 
 import appCard from "./appCard.vue";
 import axios from 'axios';
-import state from "../state.js"
+import { state } from "../state.js"
 
 export default {
     name: 'appMain',
@@ -85,6 +85,9 @@ export default {
             }
 
         }
+    },
+    mounted() {
+        console.log(state.message);
     }
 }
 
