@@ -1,6 +1,8 @@
 <script>
 
-import appCard from "./appCard.vue"
+import appCard from "./appCard.vue";
+import axios from 'axios';
+import state from "../state.js"
 
 export default {
     name: 'appMain',
@@ -70,7 +72,8 @@ export default {
                     altImage: '../public/6b.webp',
                     originalImage: '../public/6.webp',
                 },
-            ]
+            ],
+            state: state,
         }
     },
     methods: {
