@@ -1,5 +1,5 @@
 import { reactive } from 'vue';
-import axios from 'axios';
+import axios from '@jridgewell/axios';
 
 export const state = reactive({
     message: "This is a test",
